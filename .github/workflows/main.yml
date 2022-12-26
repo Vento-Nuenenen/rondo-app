@@ -1,2 +1,26 @@
-- name: Setup Ionic
-  uses: coturiv/setup-ionic@v1.0.4
+name: Build with Appflow
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  # This will build an IPA & Upload the artifact in iOS.zip
+  build-ios:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use coturiv/setup-ionic
+        uses: coturiv/setup-ionic@v1
+        with:
+          java-version: 8
+
+      - name: Use coturiv/setup-ionic
+        uses: coturiv/setup-ionic@v1
+        with:
+          cordova-version: 8
+
+      - name: Build
+        run: |
+          ionic cordova build android --prod

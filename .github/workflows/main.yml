@@ -24,3 +24,15 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 18.x
+    
+    - name: Install Cordova
+      run: npm install -g cordova
+
+    - name: Install Ionic
+      run: npm install -g @ionic/cli
+
+    - name: Install app dependencies
+      run: npm install
+
+    - name: Add Android platform
+      run: ionic cordova platform add android@latest

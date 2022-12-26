@@ -43,4 +43,4 @@ jobs:
       run: yarn install
 
     - name: Add Android platform
-      run: ionic cordova platform add android@latest
+      run: ionic cap platform add android@latest

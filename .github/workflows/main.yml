@@ -23,4 +23,4 @@ jobs:
 
       - name: Build
         run: |
-          ionic cordova build android --prod
+          cd app && ionic cordova build android --prod

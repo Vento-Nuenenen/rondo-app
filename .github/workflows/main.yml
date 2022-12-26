@@ -44,3 +44,6 @@ jobs:
 
     - name: Add Android platform
       run: ionic cap platform add android@latest
+      
+    - name: Build Android Dev APK
+      run: ionic cap build android

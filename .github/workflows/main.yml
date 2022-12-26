@@ -35,7 +35,7 @@ jobs:
       run: npm install -g yarn
 
     - name: Install app dependencies
-      run: cd app && npm install
+      run: cd app && yarn install
 
     - name: Add Android platform
       run: ionic cordova platform add android@latest

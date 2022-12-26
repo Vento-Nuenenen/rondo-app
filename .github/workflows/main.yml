@@ -8,19 +8,13 @@ on:
 
 jobs:
   # This will build an IPA & Upload the artifact in iOS.zip
-  build-ios:
+  build-android:
     runs-on: ubuntu-latest
     steps:
-      - name: Use coturiv/setup-ionic
-        uses: coturiv/setup-ionic@v1
-        with:
-          java-version: 8
-
-      - name: Use coturiv/setup-ionic
-        uses: coturiv/setup-ionic@v1
-        with:
-          cordova-version: 8
-
-      - name: Build
-        run: |
-          cd app && ionic cordova build android --prod
+    - uses: sparkfabrik/android-build-action@v1.0.0
+      with:
+        project-path: android
+        output-path: my-app.apk
+        browserstack-upload: true
+        browserstack-username: ${{ secrets.BROWSERSTACK_USERNAME }}
+        browserstack-access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}

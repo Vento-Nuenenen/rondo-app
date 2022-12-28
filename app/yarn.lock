@@ -26,6 +26,13 @@
   dependencies:
     "@types/cordova" latest
 
+"@awesome-cordova-plugins/google-analytics@^6.2.0":
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/google-analytics/-/google-analytics-6.2.0.tgz#f639b978d1d35382aaec84026904ba54d8aaa771"
+  integrity sha512-wVLV+ILkxILNdeQk5YPRBPMOGJdlI3Ztk1uyFXjFuwbDh0Mva6Gz8EmY7pPecbUrLoIBmE/cg1eoEnqThLZCCA==
+  dependencies:
+    "@types/cordova" latest
+
 "@awesome-cordova-plugins/in-app-purchase-2@^6.2.0":
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/@awesome-cordova-plugins/in-app-purchase-2/-/in-app-purchase-2-6.2.0.tgz#275b217c53430e3f379c3abe1f5100c32028d6ed"
@@ -3828,6 +3835,11 @@ copy-webpack-plugin@^9.0.1:
     normalize-path "^3.0.0"
     schema-utils "^3.1.1"
     serialize-javascript "^6.0.0"
+
+cordova-plugin-google-analytics@^1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/cordova-plugin-google-analytics/-/cordova-plugin-google-analytics-1.9.2.tgz#e07e150cdbaea571c7e1ad38676e2ee91683d140"
+  integrity sha512-+sYwZIXO6fVFIIJw6IZodQDgs0W/21PDVoGX7SaspUFtleM9vxFctpfQy72RyRA69/ib1HVBMq78j7KiogoKMQ==
 
 cordova-plugin-insomnia@^4.3.0:
   version "4.3.0"
